@@ -1,0 +1,16 @@
+<!-- new syntax for ng-if -->
+<section *ngIf="planet">
+  <section>
+    <h2>You selected: {{planet.name}}</h2>
+    <h3>Description</h3>
+  </section>
+  <section>
+    <div>
+      <label for="name">Name: </label>
+      {{planets.name}}
+    </div>
+
+  </section>
+
+  <button (click)="gotoPlanetsList()">Back to planets list</button>
+  <section>

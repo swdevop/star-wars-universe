@@ -1,0 +1,68 @@
+<!-- new syntax for ng-if -->
+<section *ngIf="person">
+  <section>
+    <h2>You selected: {{person.name}}</h2>
+    <h3>Description</h3>
+  </section>
+  <section>
+      <div>
+        <label for="name">Name: </label>
+        {{person.name}}
+      </div>
+      <div>
+        <label for="weight">Weight: </label>
+        {{person.weight}}
+      </div>
+      <div>
+        <label for="height">Height: </label>
+        {{person.height}}
+      </div>
+      <div>
+        <!--TODO: Translate species url into a real name that is clickable-->
+        <label for="species">Species: </label>
+        {{person.species}}
+      </div>
+      <div>
+        <label for="hair">Hair Color: </label>
+        {{person.hair}}
+      </div>
+      <div>
+        <label for="skin">Skin Color: </label>
+        {{person.skin}}
+      </div>
+      <div>
+        <label for="eyes">Eye Color: </label>
+        {{person.eyes}}
+      </div>
+      <div>
+        <label for="birth">Birth Year: </label>
+        {{person.birth}}
+      </div>
+      <div>
+        <label for="gender">Gender: </label>
+        {{person.gender}}
+      </div>
+      <div style="background-color:orange;">
+        <!--TODO: Translate planet url into a real name that is clickable-->
+        <label for="homeworld">Homeworld: </label>
+        {{person.homeworld.name}}
+      </div>
+      <div>
+        <!--TODO: Translate film urls into real names that are clickable-->
+        <label for="films">Films: </label>
+        {{person.films}}
+      </div>
+      <div>
+        <!--TODO: Translate vehicle urls into real names that are clickable-->
+        <label for="vehicles">Vehicles: </label>
+        {{person.vehicles}}
+      </div>
+      <div>
+        <!--TODO: Translate starship urls into real names that are clickable-->
+        <label for="starships">Starships: </label>
+        {{person.starships}}
+      </div>
+  </section>
+
+  <button (click)="gotoPeoplesList()">Back to peoples list</button>
+<section>
